@@ -38,7 +38,7 @@
         </subsection>
         <subsection>
             <title>Tentativa e Erro</title>
-            Errar não é o oposto de aprender: é uma das partes mais eficientes do processo. Kornell, Hays e Bjork <cite paper="KHB09"/> mostraram que tentar responder uma pergunta e errar, antes de ver a resposta correta, leva a uma retenção melhor do que simplesmente estudar a resposta. Na mesma linha, Kapur <cite paper="Kap08"/> chamou de <em>fracasso produtivo</em> o fenômeno em que alunos que lutam com problemas difíceis antes de receber instrução, mesmo sem conseguir resolvê-los, entendem e transferem melhor os conceitos do que os que recebem a solução logo de início. 
+            Errar não é o oposto de aprender: é uma das partes mais eficientes do processo. Kornell, Hays e Bjork <cite paper="KHB09"/> mostraram que tentar responder uma pergunta e errar, antes de ver a resposta correta, leva a uma retenção melhor do que simplesmente estudar a resposta. Na mesma linha, Kapur <cite paper="Kap08"/> chamou de <em>fracasso produtivo</em> o fenômeno que observou com alunos do ensino médio estudando cinemática: os grupos que enfrentaram problemas abertos e mal estruturados, sem nenhum apoio, fracassaram em resolvê-los, mas depois se saíram melhor em problemas novos, resolvidos individualmente, do que os grupos que trabalharam com problemas bem estruturados.
 
             O acerto imediato, por outro lado, ensina pouco: ele confirma o que já sabíamos ou, pior, dá a ilusão de que sabemos. Pedir a resposta para a IA logo de início pula a etapa da tentativa e, com ela, o erro que teria ensinado algo. 
             <box type="info">
@@ -85,9 +85,7 @@
                     anos em vez de diminuir com a familiaridade com telas.
                 </item>
             </list>
-            <todo for="rodrigo">
-                Checar as referências
-            </todo>
+           
         </subsection>
 
     </section>
