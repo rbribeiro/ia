@@ -1,0 +1,12 @@
+{
+  "name": "delta-ai-interaction",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Delta package: <ai-interaction> with <prompt> and <answer> turns, for concrete examples of AI use.",
+  "delta": {
+    "js": "index.js",
+    "css": "theme.css",
+    "tags": ["ai-interaction", "prompt", "answer"],
+    "deltaVersion": ">=0.5"
+  }
+}

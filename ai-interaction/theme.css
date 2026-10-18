@@ -1,0 +1,135 @@
+/* <ai-interaction>: a card with a metadata header and a vertically scrolling body
+   of <prompt>/<answer> turns. Every selector is scoped to the pack's tags and
+   styled with --delta-* tokens, so accent and dark mode follow the document. */
+
+delta-ai-interaction {
+  --aii-max-height: 28rem;
+  display: block;
+  margin: var(--delta-block-gap) 0;
+  background: var(--delta-env-bg);
+  border: var(--delta-hairline) solid var(--delta-env-border);
+  border-radius: var(--delta-radius-lg);
+  box-shadow: var(--delta-shadow-sm);
+  overflow: hidden;
+  font-family: var(--delta-sans);
+  color: var(--delta-ink);
+}
+
+delta-ai-interaction .aii-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  padding: 10px 16px;
+  border-bottom: var(--delta-hairline) solid var(--delta-env-border);
+  background: var(--delta-surface-1);
+}
+delta-ai-interaction .aii-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: var(--delta-tracking-cap);
+  text-transform: uppercase;
+  color: var(--delta-accent-ink);
+}
+delta-ai-interaction .aii-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+delta-ai-interaction .aii-chip {
+  display: inline-flex;
+  gap: 0.4em;
+  padding: 2px 10px;
+  border: var(--delta-hairline) solid var(--delta-rule);
+  border-radius: var(--delta-radius-pill);
+  background: var(--delta-paper);
+  font-size: 11.5px;
+  line-height: 1.6;
+}
+delta-ai-interaction .aii-chip-key { color: var(--delta-mute); }
+delta-ai-interaction .aii-chip-val { font-family: var(--delta-mono); color: var(--delta-ink-soft); }
+
+/* the scrolling region, like the scroll of a long <code> block */
+delta-ai-interaction .aii-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: var(--aii-max-height);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--delta-rule) transparent;
+}
+delta-ai-interaction .aii-body:focus-visible {
+  outline: 2px solid var(--delta-accent);
+  outline-offset: -2px;
+}
+
+delta-ai-interaction delta-prompt,
+delta-ai-interaction delta-answer {
+  display: block;
+  padding: 10px 14px 12px;
+  border-radius: var(--delta-radius);
+  font-family: var(--delta-serif);
+  line-height: var(--delta-leading);
+}
+delta-ai-interaction delta-prompt {
+  align-self: flex-end;
+  max-width: 88%;
+  background: var(--delta-accent-soft);
+  border: var(--delta-hairline) solid color-mix(in oklab, var(--delta-accent) 35%, transparent);
+}
+delta-ai-interaction delta-answer {
+  background: var(--delta-paper);
+  border: var(--delta-hairline) solid var(--delta-rule-soft);
+}
+
+delta-ai-interaction .aii-turn-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 4px;
+  font-family: var(--delta-sans);
+}
+delta-ai-interaction .aii-turn-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: var(--delta-tracking-cap);
+  text-transform: uppercase;
+  color: var(--delta-mute);
+}
+delta-ai-interaction delta-prompt .aii-turn-label { color: var(--delta-accent-ink); }
+
+delta-ai-interaction .aii-copy {
+  font-family: var(--delta-sans);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--delta-accent-ink);
+  background: transparent;
+  border: var(--delta-hairline) solid color-mix(in oklab, var(--delta-accent) 45%, transparent);
+  border-radius: var(--delta-radius-pill);
+  padding: 2px 10px;
+  cursor: pointer;
+  transition: background var(--delta-dur-fast) var(--delta-ease);
+}
+delta-ai-interaction .aii-copy:hover { background: color-mix(in oklab, var(--delta-accent) 14%, transparent); }
+delta-ai-interaction .aii-copy.is-copied { color: var(--delta-ok); border-color: var(--delta-ok); }
+
+delta-ai-interaction .aii-content > :first-child { margin-top: 0; }
+delta-ai-interaction .aii-content > :last-child { margin-bottom: 0; }
+
+@media (max-width: 640px) {
+  delta-ai-interaction delta-prompt { max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  delta-ai-interaction .aii-copy { transition: none; }
+}
+@media print {
+  delta-ai-interaction .aii-body { max-height: none; overflow: visible; }
+  delta-ai-interaction .aii-copy { display: none; }
+}

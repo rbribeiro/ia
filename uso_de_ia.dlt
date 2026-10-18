@@ -1,0 +1,317 @@
+<document lang="pt" theme-accent="purple">
+    <team>
+        <member id="rodrigo" name="Rodrigo" />
+        <member id="claude" name="Claudinho" kind="agent" />
+    </team>
+    <import src="./ai-interaction" />
+    <title>Uso de responsável de IA</title>
+    <meta>
+        <meta-item key="Autores">Rodrigo Ribeiro, alunas e alunos do IMPA Tech</meta-item>
+        <meta-item key="Assistência IA">Claude Opus 5.5</meta-item>
+        <meta-item key="Período">2026.2</meta-item>
+    </meta>
+    <abstract>
+        Este documento tem como objetivo servir como uma referência do que consideramos uso <em>responsável de IA</em> no contexto acadêmico. O documento foi estruturado em conjunto com os alunos do IMPA Tech na oficina <b>Uso responsável de IA</b> ministrada pelo professor Rodrigo Ribeiro.
+        Partimos de como seres humanos aprendem para propor um critério simples: um uso de IA é responsável quando preserva o esforço que gera aprendizado, em vez de eliminá-lo. Terminamos com exemplos concretos de interações em que a IA atua como tutora, e não como uma máquina de respostas.
+    </abstract>
+    <floating>
+        <toc />
+        <review />
+    </floating>
+    <intro>
+            Ferramentas de IA generativa chegaram às salas de aula mais rápido do que qualquer regra sobre como usá-las. Elas podem ser um tutor paciente ou o atalho leva embora a oportunidade de aprender. A diferença está em como ela é usada. Este documento reúne o que discutimos sobre essa diferença na oficina <b>Uso responsável de IA</b>, com as alunas e os alunos do IMPA Tech.
+
+            O próprio documento é um exemplo do que defende. Ele foi escrito em conjunto com o Claude, um modelo de IA, a partir das discussões e sugestões da oficina. A IA acelerou a escrita e só.
+    </intro>
+    <section>
+        <title>Aprendizado Humano</title>
+        <intro>O uso responsável de IA para o aprendizado passa por entender como seres humanos aprendem. Assim, você mesmo pode avaliar se o seu uso de IA prejudica ou ajuda o seu aprendizado. Lembre-se, você é o maior responsável pelo seu aprendizado!</intro>
+        <subsection>
+            <title>Atrito Cognitivo</title>
+            A ideia de <em>atrito cognitivo</em> é aprender exige fazer força. Atrito cognitivo é o esforço mental de lembrar, conectar, testar e reformular uma ideia: a sensação de estar travado, de ter que reler, de não saber por onde começar. Parece um defeito do processo, mas é justamente esse esforço que consolida o conhecimento na memória. A psicologia cognitiva chama isso de <em>dificuldades desejáveis</em> <cite paper="Bjo94"/>: condições que tornam o estudo mais lento e mais difícil no curto prazo, mas produzem aprendizado mais duradouro.
+
+            A IA é, por construção, uma máquina de remover atrito: ela resume, explica, resolve e reescreve em segundos. Por isso a pergunta central do uso responsável é <em>qual</em> atrito ela está removendo. Tirar o atrito burocrático (formatar uma tabela, achar um erro de sintaxe) libera tempo para pensar, enquanto tirar o atrito de pensar elimina o próprio aprendizado. 
+            <box type="warning">
+             <title>Dica!</title>
+             Se a resposta da IA te deixou com a sensação de ter entendido sem ter feito esforço nenhum, desconfie!
+            </box>
+        </subsection>
+        <subsection>
+            <title>Tentativa e Erro</title>
+            Errar não é o oposto de aprender: é uma das partes mais eficientes do processo. Kornell, Hays e Bjork <cite paper="KHB09"/> mostraram que tentar responder uma pergunta e errar, antes de ver a resposta correta, leva a uma retenção melhor do que simplesmente estudar a resposta. Na mesma linha, Kapur <cite paper="Kap08"/> chamou de <em>fracasso produtivo</em> o fenômeno em que alunos que lutam com problemas difíceis antes de receber instrução, mesmo sem conseguir resolvê-los, entendem e transferem melhor os conceitos do que os que recebem a solução logo de início. 
+
+            O acerto imediato, por outro lado, ensina pouco: ele confirma o que já sabíamos ou, pior, dá a ilusão de que sabemos. Pedir a resposta para a IA logo de início pula a etapa da tentativa e, com ela, o erro que teria ensinado algo. 
+            <box type="info">
+                <title>Dica</title>
+                Use a IA <em>depois</em> de tentar, para entender por que você errou, e não <em>antes</em>, para não ter que errar.
+            
+            </box>
+        </subsection>
+        <subsection>
+            <title>Tempo gasto nos problemas</title>
+            Uma queixa recorrente: "uso IA porque não tenho tempo" ou "passo horas na primeira questão da lista e não sobra tempo para o resto". A queixa é real, mas parte de uma suposição errada: a de que cada problema custa o mesmo tempo. Não custa. O tempo gasto para aprender uma habilidade cai rapidamente com a prática, um padrão tão regular que a psicologia o chama de <em>lei da prática</em> <cite paper="NR81"/>: as primeiras repetições são lentas e caras, e as seguintes ficam cada vez mais rápidas.
+
+            As horas na primeira questão não são tempo perdido: são o investimento que torna as próximas questões rápidas. É ali que você monta o repertório (as definições, os truques, os erros típicos) que será reaproveitado no resto da lista. Quem terceiriza as primeiras questões para a IA economiza tempo agora, mas chega às últimas sem esse repertório, e acaba precisando da IA de novo, num ciclo que não termina. Se o tempo está mesmo curto, é melhor resolver bem metade da lista do que copiar a lista inteira.
+        </subsection>
+        <subsection>
+            <title>Papel de mídias físicas</title>
+            Mesmo com todo avanço tecnológico e a promessa de que tecnologia iria revolucionar a educação/aprendizado, não faltam evidências de que o modo mais tradicional junto com mídias mais clássicas (papel e caneta) ainda constituem a maneira mais eficiente de aprender quando a métrica é retenção de conhecimento.
+
+            Abaixo compilamos alguns estudos comprovam o importante papel desempenhado pelo nosso querido papel e nossa querida caneta!
+
+            <list>
+                <item>
+                    <strong>Anotações à mão versus no laptop.</strong> Em três experimentos,
+                    Mueller e Oppenheimer <cite paper="MO14"/> mostraram que estudantes que
+                    anotavam aulas à mão iam melhor em perguntas conceituais do que os que
+                    usavam laptop, ainda que anotassem menos. A explicação proposta é que
+                    escrever à mão, por ser mais lento, obriga a resumir e reformular, enquanto
+                    o teclado favorece a transcrição literal e superficial.
+                </item>
+                <item>
+                    <strong>Papel versus tela.</strong> Em
+                    reportagem da Scientific American, Jabr <cite paper="Jab13"/> reúne
+                    estudos de neurociência e psicologia sobre leitura em papel e em telas.
+                    Ele argumenta que o livro físico oferece uma "topografia" (páginas,
+                    espessura, posição no volume) que ajuda a construir um mapa mental do
+                    texto, e que telas tendem a exigir mais esforço e a reduzir a compreensão.
+                </item>
+                <item status="draft" by="claude">
+                    <strong>Meta-análise sobre meio de leitura.</strong> Delgado, Vargas,
+                    Ackerman e Salmerón <cite paper="DVAS18"/> combinaram 54 estudos, com
+                    cerca de 170 mil participantes, e encontraram vantagem consistente da
+                    leitura em papel para a compreensão de textos informativos. A vantagem
+                    é maior quando há limite de tempo e, curiosamente, aumentou ao longo dos
+                    anos em vez de diminuir com a familiaridade com telas.
+                </item>
+            </list>
+            <todo for="rodrigo">
+                Checar as referências
+            </todo>
+        </subsection>
+
+    </section>
+    <!-- <section>
+        <title>Papel das instituições de ensino na era da IA</title>
+        <intro>As instituições de ensino possuem papel essencial na propagação, retenção e geração de conhecimento.</intro>
+
+        Diferentemente de outros entes da sociedade, instituições de ensino precisam olhar para o conhecimento humano em todas as direções do tempo: <em>passado</em>, <em>presente</em> e <em>futuro</em>.
+        <subsection numbered="false">
+            <title>Passado</title>
+            Instituições de ensino como o <em>IMPA Tech</em>
+        </subsection>
+        <subsection>
+            <title>Habilidades <em>evergreen</em></title>
+        </subsection>
+    </section> -->
+    <section>
+        <title>Exemplos</title>
+            As interações abaixo são ilustrativas: foram escritas para este documento e mostram a IA no papel de tutora. Repare que em todos os casos, quem pede é quem define as regras do jogo logo no primeiro prompt.
+        <example>
+            <title>Como usar para resolver exercícios?</title>
+            A aluna já tentou o exercício e pede ajuda sem pedir a resposta. A IA preserva o atrito cognitivo: aponta onde está o erro, mas deixa a correção para ela.
+
+            <ai-interaction model="claude-opus-5-5" effort="medium" date="2026-10-18" max-height="28rem">
+                <prompt role="Aluna">
+                    Estou tentando provar que $\sqrt{2}$ é irracional. <strong>Não me dê a prova.</strong> Quero só que você me diga se estou no caminho certo e, se eu errar, me faça uma pergunta que me ajude a achar o erro.
+
+                    Minha tentativa: suponho $\sqrt{2} = p/q$. Então $p^2 = 2q^2$, logo $p^2$ é par, logo $p$ é par. Escrevo $p = 2k$, e aí $4k^2 = 2q^2$, ou seja, $q^2 = 2k^2$, então $q$ também é par. Mas aí não chego numa contradição, só descubro que $p$ e $q$ são pares, e daí?
+                </prompt>
+                <answer>
+                    Você está muito perto, e as contas estão todas certas. O que falta não está nas contas, está na primeira linha.
+
+                    Uma pergunta: quando você escreve $\sqrt{2} = p/q$, existe alguma escolha de $p$ e $q$ que você poderia ter feito desde o início e que tornaria "$p$ e $q$ são ambos pares" um problema?
+                </answer>
+                <prompt role="Aluna">
+                    Ah... se eu escolher a fração já simplificada, $p$ e $q$ não podem ter fator 2 em comum. Então chegar em "os dois são pares" contradiz isso!
+                </prompt>
+                <answer>
+                    Exatamente. Agora que você achou sozinha, vale um passo a mais: na sua prova você usou "se $p^2$ é par, então $p$ é par". Você sabe justificar essa passagem? Se não souber, tente antes de me perguntar: ela é um bom exercício por si só.
+                </answer>
+            </ai-interaction>
+        </example>
+        <example>
+            <title>Como construir um cronograma de estudos</title>
+            O aluno chega com pouco tempo e uma lista inteira para fazer. A IA não monta o cronograma sozinha: pergunta, propõe e leva em conta que as primeiras questões custam mais tempo do que as últimas.
+
+            <ai-interaction model="claude-opus-5-5" effort="medium" date="2026-10-18" max-height="28rem">
+                <prompt role="Aluno">
+                    Tenho prova de Cálculo II em 10 dias e uma lista de 20 exercícios de séries que ainda nem comecei. Me ajuda a montar um cronograma? Não quero que você resolva nada, só quero me organizar. Pergunte o que precisar antes.
+                </prompt>
+                <answer>
+                    Claro. Três perguntas antes:
+                    <list>
+                        <item>Quanto tempo por dia você consegue reservar, de verdade?</item>
+                        <item>Você já se sente à vontade com os testes de convergência (comparação, razão, raiz), ou eles ainda são novos?</item>
+                        <item>A lista está organizada por assunto ou misturada?</item>
+                    </list>
+                </answer>
+                <prompt role="Aluno">
+                    Umas 2 horas por dia. Os testes eu vi na aula mas nunca usei. A lista vai em ordem: primeiro convergência, depois séries de potências.
+                </prompt>
+                <answer>
+                    Então uma sugestão, para você ajustar:
+                    <list>
+                        <item><strong>Dias 1 a 3:</strong> só os exercícios 1 a 5. Vai parecer lento, e é para ser: aqui você está aprendendo a escolher qual teste usar. Anote no papel, para cada exercício, por que escolheu aquele teste.</item>
+                        <item><strong>Dias 4 a 6:</strong> exercícios 6 a 14. Com o repertório dos primeiros dias, devem render bem mais por hora.</item>
+                        <item><strong>Dias 7 e 8:</strong> exercícios 15 a 20, de séries de potências.</item>
+                        <item><strong>Dias 9 e 10:</strong> refazer, sem olhar, os exercícios em que você mais travou.</item>
+                    </list>
+                    Se no dia 3 você ainda não tiver terminado os cinco primeiros, não pule para frente: me conte em qual travou e por quê, e eu te dou uma dica, não a solução.
+                </answer>
+            </ai-interaction>
+        </example>
+        <example>
+            <title>Como usar para achar um erro no código?</title>
+            O aluno tem um programa que não funciona e quer ajuda para depurar. A IA não reescreve o código: pede que ele explique o que espera que aconteça e o leva a testar a própria hipótese. É tentativa e erro com um tutor ao lado.
+
+            <ai-interaction model="claude-opus-5-5" effort="medium" date="2026-10-18" max-height="28rem">
+                <prompt role="Aluno">
+                    Minha função deveria devolver a média de uma lista, mas para <c>[2, 4, 6]</c> ela devolve <c>0.6666666666666666</c> em vez de <c>4.0</c>. Não reescreva o código, quero achar o erro sozinho. Só me ajuda a pensar.
+
+                    <code lang="python" numbered="false">
+def media(xs):
+    soma = 0
+    for x in xs:
+        soma += x
+        return soma / len(xs)
+                    </code>
+                </prompt>
+                <answer>
+                    Boa ideia tentar achar sozinho. Vamos fazer o computador de cabeça.
+
+                    Pegue a lista <c>[2, 4, 6]</c> e siga a função linha a linha, num papel: anote o valor de <c>soma</c> depois de cada linha executada. Em que momento a função termina? Quantas vezes o laço chegou a rodar até lá?
+                </answer>
+                <prompt role="Aluno">
+                    Primeira volta: <c>soma</c> vira 2, e aí já cai no <c>return</c>, que dá 2/3. É exatamente o 0.666 que eu estava vendo! O laço só roda uma vez: o <c>return</c> está dentro do <c>for</c>.
+                </prompt>
+                <answer>
+                    Isso: o <c>return</c> está indentado dentro do laço, então a função sai na primeira volta. Repare que foi a saída exata, 0.666, que entregou a pista. Vale guardar duas lições:
+                    <list>
+                        <item>Em Python, a indentação faz parte da lógica. Depois de corrigir, rode de novo com <c>[2, 4, 6]</c> e confira.</item>
+                        <item>Simular o código à mão, com um exemplo pequeno, costuma achar o erro mais rápido do que reler o código procurando por ele.</item>
+                    </list>
+                    Um desafio para você testar: o que a sua função faz com uma lista vazia?
+                </answer>
+            </ai-interaction>
+        </example>
+        <example>
+            <title>Como usar para revisar o que estudou?</title>
+            A aluna estudou no caderno e quer saber se de fato aprendeu. Em vez de pedir um resumo da matéria, ela pede para ser testada. Lembrar sem consultar é, por si só, uma forma de atrito que fixa o conteúdo.
+
+            <ai-interaction model="claude-opus-5-5" effort="medium" date="2026-10-18" max-height="28rem">
+                <prompt role="Aluna">
+                    Acabei de estudar, no meu caderno, o Teorema do Valor Médio. Quero que você me teste: faça uma pergunta de cada vez, espere a minha resposta e só então me diga o que acertei e o que faltou. Não me dê o resumo da matéria.
+                </prompt>
+                <answer>
+                    Combinado. Primeira pergunta, sem olhar o caderno: quais são as hipóteses do Teorema do Valor Médio sobre a função $f$ no intervalo $[a, b]$, e o que ele garante?
+                </answer>
+                <prompt role="Aluna">
+                    $f$ tem que ser derivável em $[a, b]$, e aí existe $c$ com $f'(c) = \frac{f(b) - f(a)}{b - a}$.
+                </prompt>
+                <answer>
+                    A conclusão está perfeita. Nas hipóteses, há um detalhe: o teorema pede $f$ <em>contínua</em> no intervalo fechado $[a, b]$ e <em>derivável</em> no aberto $(a, b)$. O que você escreveu é mais forte do que o necessário, então continua verdadeiro, mas deixa de fora funções que o teorema cobre.
+
+                    Para fixar a diferença, a próxima pergunta: você consegue pensar numa função contínua em $[0, 1]$, derivável em $(0, 1)$, mas <em>não</em> derivável em $x = 0$? Depois de responder, anote no caderno a versão correta das hipóteses.
+                </answer>
+            </ai-interaction>
+        </example>
+    </section>
+    <section>
+        <title>Declaração de uso de IA</title>
+            Assinar um trabalho é afirmar: <em>isto é meu, e eu respondo por isto</em>. Quem escreveu um único prompt e entregou a resposta não pode fazer essa afirmação. Não é uma questão de proibir a IA, e sim de honestidade sobre quem fez o quê. Uma boa declaração de uso de IA permite que o leitor (e o professor) saiba onde a IA entrou, o que ela recebeu, o que ela produziu e o que foi verificado por uma pessoa.
+
+            <list>
+                <item><strong>Diga onde.</strong> Indique quais partes do trabalho tiveram participação da IA: uma seção, um parágrafo, uma figura, um trecho de código. "Usei IA no trabalho" não informa nada.</item>
+                <item><strong>Diga como.</strong> Descreva o papel da IA em cada parte: tutora, revisora de texto, geradora de um primeiro rascunho, tradutora, depuradora de código. Informe a ferramenta e o modelo usados.</item>
+                <item><strong>Diga qual foi o input humano.</strong> O que você entregou à IA? Um esboço seu, uma lista de ideias, um texto já escrito para ser expandido, uma referência de que você se lembrava vagamente? Quanto mais o conteúdo de partida for seu, mais o resultado é seu.</item>
+                <item><strong>Diga o que foi verificado, e como.</strong> Toda afirmação, conta, demonstração e referência produzida pela IA precisa ser conferida por você. Diga o que você checou (as referências existem e dizem o que o texto afirma? o código passa nos testes? a demonstração fecha?) e o que ficou sem checar.</item>
+                <item><strong>Diga o que é autoria humana.</strong> As ideias centrais, a estrutura, as escolhas e as conclusões são suas? É isso que justifica o seu nome no trabalho. Se não forem, o trabalho não é seu.</item>
+                <item><strong>Guarde o registro.</strong> Mantenha os prompts e as respostas relevantes. Se alguém perguntar, você consegue mostrar o processo, não só o resultado.</item>
+                <item><strong>Na dúvida, declare.</strong> Declarar a mais nunca prejudica; esconder um uso que depois aparece, sim.</item>
+            </list>
+
+            <box type="tip">
+                <title>Usar a IA como tutora simplifica a declaração</title>
+                Se você usou a IA só como tutora, como nos exemplos da seção anterior, a declaração é praticamente nula: a IA não participou da criação do trabalho, só do seu aprendizado. Ninguém declara o colega que tirou uma dúvida ou o livro em que estudou. Basta algo como "usei IA para tirar dúvidas sobre o conteúdo; nenhuma parte do texto foi escrita por ela".
+
+                O mesmo vale, em boa medida, para tarefas <em>mecânicas</em> sobre um conteúdo que já é seu: expandir ou revisar um texto que você escreveu, formatar a bibliografia, trazer para o texto referências que você então confere uma a uma. Aí a declaração é curta, mas precisa existir: diga o que foi feito e que você verificou o resultado.
+            </box>
+
+            <box type="note" collapsed="true">
+                <title>Este documento como exemplo</title>
+                Este documento foi escrito com assistência do Claude (Claude Opus 5.5), dentro do próprio arquivo-fonte: o professor deixava tarefas marcadas para a IA, e cada trecho escrito por ela entrava como rascunho até ser revisado.
+                <list>
+                    <item><strong>Autoria humana.</strong> O tema, a estrutura das seções, as ideias de cada seção e as conclusões vêm das discussões da oficina e do professor Rodrigo Ribeiro. A estrutura e o que cada seção deveria conter foi feito em sala de aula em conjunto com as alunas e alunos.</item>
+                    <item><strong>Resumo e introdução.</strong> A IA expandiu as primeiras linhas escritas pelo professor. O texto final foi editado e encurtado por ele.</item>
+                    <item><strong>Seção de aprendizado humano.</strong> A partir das ideias pedidas em cada tarefa (o que é atrito cognitivo, a importância de errar, o tempo não linear gasto nos problemas), a IA redigiu o texto e sugeriu referências. Em "Papel de mídias físicas", o professor indicou as referências de que se lembrava (Mueller e Oppenheimer; um artigo da Scientific American), e a IA as localizou e as descreveu. As caixas de dica e o corte de trechos foram decisões do professor.</item>
+                    <item><strong>Exemplos.</strong> As quatro interações foram escritas pela IA a pedido, seguindo o que foi discutido nas seções anteriores. São ilustrativas, e não registros de conversas reais.</item>
+                    <item><strong>Esta seção.</strong> A IA redigiu a lista de recomendações e esta caixa a partir dos pontos indicados pelo professor.</item>
+                    <item><strong>Verificação.</strong> Todo o texto da IA foi lido e editado pelo professor. A conferência das referências bibliográficas (se existem e se dizem o que o texto afirma) foi feito pelo professor.</item>
+                </list>
+            </box>
+    </section>
+    <bibliography>
+        <paper id="MO14">
+            <author>Mueller, P. A. and Oppenheimer, D. M.</author>
+            <title>The pen is mightier than the keyboard: Advantages of longhand over laptop note taking</title>
+            <journal>Psychological Science 25(6), 1159–1168</journal>
+            <year>2014</year>
+            <link>https://doi.org/10.1177/0956797614524581</link>
+        </paper>
+        <paper id="MDR19">
+            <author>Morehead, K. and Dunlosky, J. and Rawson, K. A.</author>
+            <title>How much mightier is the pen than the keyboard for note-taking? A replication and extension of Mueller and Oppenheimer (2014)</title>
+            <journal>Educational Psychology Review 31, 753–780</journal>
+            <year>2019</year>
+            <link>https://doi.org/10.1007/s10648-019-09468-2</link>
+        </paper>
+        <paper id="Jab13">
+            <author>Jabr, F.</author>
+            <title>The reading brain in the digital age: The science of paper versus screens</title>
+            <journal>Scientific American</journal>
+            <year>2013</year>
+            <link>https://www.scientificamerican.com/article/reading-paper-screens/</link>
+        </paper>
+        <paper id="DVAS18">
+            <author>Delgado, P. and Vargas, C. and Ackerman, R. and Salmerón, L.</author>
+            <title>Don't throw away your printed books: A meta-analysis on the effects of reading media on reading comprehension</title>
+            <journal>Educational Research Review 25, 23–38</journal>
+            <year>2018</year>
+            <link>https://doi.org/10.1016/j.edurev.2018.09.003</link>
+        </paper>
+        <paper id="Bjo94">
+            <author>Bjork, R. A.</author>
+            <title>Memory and metamemory considerations in the training of human beings</title>
+            <journal>In: Metcalfe, J. and Shimamura, A. (eds.), Metacognition: Knowing about knowing, MIT Press, 185–205</journal>
+            <year>1994</year>
+        </paper>
+        <paper id="KHB09">
+            <author>Kornell, N. and Hays, M. J. and Bjork, R. A.</author>
+            <title>Unsuccessful retrieval attempts enhance subsequent learning</title>
+            <journal>Journal of Experimental Psychology: Learning, Memory, and Cognition 35(4), 989–998</journal>
+            <year>2009</year>
+            <link>https://doi.org/10.1037/a0015729</link>
+        </paper>
+        <paper id="Kap08">
+            <author>Kapur, M.</author>
+            <title>Productive failure</title>
+            <journal>Cognition and Instruction 26(3), 379–424</journal>
+            <year>2008</year>
+            <link>https://doi.org/10.1080/07370000802212669</link>
+        </paper>
+        <paper id="BM01">
+            <author>Butterfield, B. and Metcalfe, J.</author>
+            <title>Errors committed with high confidence are hypercorrected</title>
+            <journal>Journal of Experimental Psychology: Learning, Memory, and Cognition 27(6), 1491–1494</journal>
+            <year>2001</year>
+            <link>https://doi.org/10.1037/0278-7393.27.6.1491</link>
+        </paper>
+        <paper id="NR81">
+            <author>Newell, A. and Rosenbloom, P. S.</author>
+            <title>Mechanisms of skill acquisition and the law of practice</title>
+            <journal>In: Anderson, J. R. (ed.), Cognitive skills and their acquisition, Erlbaum, 1–55</journal>
+            <year>1981</year>
+        </paper>
+    </bibliography>
+</document>
